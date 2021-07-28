@@ -7,14 +7,14 @@ q=abs(phc.electron_charge_to_mass_quotient.value*me);
 eps_0=phc.electric_constant.value;
 ct_k=q/(4*pi*eps_0);
 
-x1=-12:0.05:12; %intervalo de iteración
+x1=-12:0.05:12; %intervalo de iteraciÃ³n
 a=1;
 [x,y]=meshgrid(x1);
 f=@(x,y)(1./sqrt(x.^2+(y-a).^2));
 g=@(x,y)(1./sqrt(x.^2+(y+a).^2));
 q1=1;
 q2=-1;
-v=@(x,y)(-q1*f(x,y)+-q2*g(x,y)); %potencial eléctrico, con f carga positiva, g carga negativa 
+v=@(x,y)(-q1*f(x,y)+-q2*g(x,y)); %potencial elÃ©ctrico, con f carga positiva, g carga negativa 
 
 hold on
 axis([-7 7 -7 7])
