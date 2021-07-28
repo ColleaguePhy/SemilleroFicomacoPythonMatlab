@@ -2,7 +2,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 from scipy.interpolate import lagrange, splev, splrep
 
-dirvel='C:/Users/UIS/Desktop/Python/Semillero_Ficomaco/Graficas/velocity.txt'
+dirvel='velocity.txt'
 
 datos=np.loadtxt(dirvel,dtype='float',delimiter=',',unpack='True',skiprows=1)[:, :]
 col,fil=datos.shape
