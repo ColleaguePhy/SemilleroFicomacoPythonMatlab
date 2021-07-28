@@ -89,3 +89,4 @@ print('maximo=',np.max(vr))
 # tamaño y forma del vector
 print(np.size(a)) #numero de elementos
 print(np.shape(b)) #dimensiones del arreglo
+
